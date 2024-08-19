@@ -1,0 +1,130 @@
+// Variables
+$green-color: #1b9936;
+$blue-color: #5bc0de;
+$background-color: #b8d99a;
+$text-color: #412929;
+
+body {
+    font-family: 'Arial';
+    line-height: 1.5;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+// Header
+.header {
+    background: $blue-color;
+    color: white;
+    padding: 5px 0;
+
+    .logo {
+        float: left;
+    }
+
+    .nav {
+        float: right;
+
+        ul {
+            list-style:none;
+
+            li {
+                display: inline;
+                margin-left: 30px;
+
+                a {
+                    color:$text-color;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Hero Section
+.name {
+    background: $blue-color;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        background: $green-color;
+        color: $text-color;
+        padding: 10px 25px;
+        text-decoration: none;
+        border-radius: 10px;
+        &:hover {
+            box-shadow: 0 2px 4px black;
+        }
+    }
+}
+
+
+.portfolio {
+    padding: 40px 0;
+    background: $background-color;
+    text-align: center;
+
+    h2 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    a{
+        color: $background-color;
+        text-decoration: none;
+    }
+
+    .portfolio-items {
+        // display: flex;
+        align-items: center;
+        // justify-content: space-around;
+        // flex-wrap: wrap;
+    }
+
+    .portfolio-item {
+        background: $blue-color;
+        padding: 20px;
+        margin: 20px;
+        margin-left: 500px;
+
+        width: 10%;
+        color: $background-color;
+        text-align: center;
+        &:hover {
+            box-shadow:0 2px 2px  #333;
+        }
+    }
+}
+
+
+.footer {
+    background: $green-color;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
