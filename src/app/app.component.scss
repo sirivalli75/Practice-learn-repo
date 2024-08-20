@@ -15,6 +15,7 @@ body {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    align-items: stretch;
 }
 
 // Header
@@ -110,9 +111,9 @@ body {
         background: $blue-color;
         padding: 20px;
         margin: 20px;
-        margin-left: 500px;
+        margin-left: 150px;
 
-        width: 10%;
+        width: 20%;
         color: $background-color;
         text-align: center;
         &:hover {
