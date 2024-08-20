@@ -4,6 +4,7 @@ $blue-color: #5bc0de;
 $background-color: #b8d99a;
 $text-color: #412929;
 
+ 
 body {
     font-family: 'Arial';
     line-height: 1.5;
@@ -16,13 +17,21 @@ body {
     margin: auto;
     overflow: hidden;
     align-items: stretch;
+
+    @media (max-width:768px) {
+        width: 90%;
+    }
 }
 
-// Header
+
 .header {
     background: $blue-color;
     color: white;
     padding: 5px 0;
+    @media (max-width:768px) {
+        text-align: center;
+        float: none;
+    }
 
     .logo {
         float: left;
@@ -36,7 +45,10 @@ body {
 
             li {
                 display: inline;
-                margin-left: 30px;
+                margin-left: 20px;
+                @media (max-width:768px) {
+                    display: flex;
+                }
 
                 a {
                     color:$text-color;
@@ -50,12 +62,15 @@ body {
     }
 }
 
-// Hero Section
+
 .name {
     background: $blue-color;
     color: white;
     padding: 50px 0;
     text-align: center;
+    @media (max-width:768px) {
+        padding:10px 0;
+    }
 
     h1 {
         font-size: 3em;
@@ -101,23 +116,31 @@ body {
     }
 
     .portfolio-items {
-        // display: flex;
+        display: inline;
         align-items: center;
         // justify-content: space-around;
         // flex-wrap: wrap;
+
+        @media (max-width:768px) {
+        display: inline;
+    }
     }
 
     .portfolio-item {
         background: $blue-color;
         padding: 20px;
         margin: 20px;
-        margin-left: 150px;
+        margin-left: 450px;
 
         width: 20%;
         color: $background-color;
-        text-align: center;
+        text-align:center;
         &:hover {
             box-shadow:0 2px 2px  #333;
+        }
+        @media (max-width: 768px) {
+            margin-left:100px ;
+            
         }
     }
 }
