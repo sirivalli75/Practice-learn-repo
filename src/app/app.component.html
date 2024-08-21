@@ -12,12 +12,11 @@
             <div class="logo"><img width="100" src="https://static.vecteezy.com/system/resources/previews/003/682/726/non_2x/pink-white-s-alphabet-letter-logo-for-company-and-business-with-gradient-design-pastel-template-for-corporate-identity-vector.jpg"/></div>
             <nav class="nav">
                 <ul>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+                  <li><a (click)="header()">Portfolio</a></li>
+                  <li><a (click)="header()">Projects</a></li>
+                  <li><a (click)="header()">About me</a></li>
+                  <li><a (click)="header()">Contact</a></li>
+                  </ul></nav>
         </div>
     </header>
 
@@ -26,9 +25,10 @@
         <div class="container">
             <h1>Siri Pechetti</h1>
             <p>Frontend Angular Developer.You can download my resume below.</p>
-            <a href="#" class="btn">Resume</a>
+            <button (click)="downloadResume()">Resume</button>
+
         </div>
-    </section>
+      </section>
 
     <!-- Portfolio Section -->
     <section class="portfolio">
@@ -51,6 +51,6 @@
             <p>&copy; 2024 Siri. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
+

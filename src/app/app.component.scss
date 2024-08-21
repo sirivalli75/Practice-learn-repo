@@ -55,6 +55,7 @@ body {
                     text-decoration: none;
                     &:hover{
                         text-decoration: underline;
+                        cursor: grab;
                     }
                 }
             }
@@ -82,7 +83,7 @@ body {
         margin-bottom: 20px;
     }
 
-    .btn {
+    button {
         background: $green-color;
         color: $text-color;
         padding: 10px 25px;
