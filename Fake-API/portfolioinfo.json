@@ -1,0 +1,23 @@
+
+    {
+        "portfolio":[
+            {
+            "name": "Sirivalli Pechetti",
+            "occupation": "Angular frontend Developer"
+            }
+        ],
+
+        "aboutme":[
+            {
+                "experience": "i have 3 years of experience in frontend development, worked in WIPRO limited."
+            }
+        ],
+        "contact":[
+            {
+                "phoneno":9733402791,
+                "emailID":"siriaswin23@gmail.com"
+            }
+        ]
+
+
+    }

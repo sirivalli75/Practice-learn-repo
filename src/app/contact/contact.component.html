@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Contact Information</title>
+    </head>
+    <body>
+        <div class="contact-info-container">
+            <h1>Contact Informatio</h1>
+            <div *ngIf="contactInfo">
+                <h2>{{contactInfo.phoneno}}</h2>
+                <h4>{{contactInfo.emailId}}</h4>
+            </div>
+        </div>
+    </body>
+</html>
