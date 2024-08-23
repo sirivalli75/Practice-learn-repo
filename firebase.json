@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/cascade/browser",
+    "public": "dist/cascade/browser/port",
     "ignore": [
       "firebase.json",
       "**/.*",

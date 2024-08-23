@@ -21,7 +21,7 @@ export class AboutMeComponent {
 
   }
   aboutMeInfo = {
-    info:"I worked as a jr angular frontend developer nearly 3 years."
+    info:"I worked as a jr angular frontend developer nearly 3 years.I completed my batchelors degree in EEE."
   };
 
 }
