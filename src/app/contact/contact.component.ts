@@ -1,5 +1,6 @@
 import { isPlatformBrowser, NgIf } from '@angular/common';
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,15 +11,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  constructor(@Inject(PLATFORM_ID) private platformId:object ){}
-
-  ngOnInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-     setTimeout(() => {
-       window.scrollTo(0, document.body.scrollHeight);
-     }, 0);
-   }
- }
 
   contactInfo = {
     phoneno:"mobile:1234567890",

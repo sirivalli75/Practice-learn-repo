@@ -12,13 +12,15 @@
             <nav class="nav">
                 <ul>
                   <li><a routerLink="/port">Portfolio</a></li>
-                  <li><a routerLink = "/about-me">About me</a></li>
+                  <li><a routerLink = "/about">About me</a></li>
                   <li><a routerLink = "/contact">Contact</a></li>
                   </ul>
             </nav>
         </div>
     </header>
-
+    <main>
+        <router-outlet></router-outlet>
+    </main>
 
     <section class="name">
         <div class="container">
@@ -41,8 +43,6 @@
             </div>
         </div>
     </section>
-   
-      <router-outlet></router-outlet>
    
     <footer class="footer">
         <div class="container">

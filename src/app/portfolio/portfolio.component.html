@@ -13,6 +13,27 @@
                <p>{{ portfolioInfo.occupation }}</p>
            </div>
        </div>
+
+       <div class="form-container">
+           <h3>Fill this form to check my availability to connect</h3>
+           <form #infoForm="ngForm"  (submit)="availabilityInfo(infoForm)">
+            <label>Your Name</label>
+            <input type="text" [(ngModel)]="yourname" name="yourname"> <br>
+            <label>emailId</label>
+            <input type="email" [(ngModel)]="emailaddres" name="emailaddres"><br>
+            <label>Company Name</label>
+            <input type="text" [(ngModel)]="company" name="company"><br>
+            <label>Mobile Number</label>
+            <input type="text" [(ngModel)]="phonenumber" name="phonenumber"><br>
+            <label>Type of Consultance</label>
+            <select [(ngModel)]="type" name="type">
+              <option value="1">Recruiter</option>
+              <option value="2">Client</option>
+            </select> <br>
+            <input type="checkbox" [(ngModel)]="terms" name="terms">I'm available to contact me on phone <br>
+            <button type="submit">Check Availability</button>
+           </form>
+       </div>
    </body>
    </html>
    
